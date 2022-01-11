@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+    <style>
+        #display_key_value {
+            display: flex;
+        }
+        
+        #display_key_value .key {
+            flex: 1;
+            font-weight: bold;
+        }
+        
+        #display_key_value .value {
+            flex: 1;
+        }
+    </style>
+
+    <title>EDF-Hazard Reporting Flask Project (data)</title>
+</head>
+
+<body>
+    <h1>EDF-Hazard Reporting Data</h1>
+    <hr> {% for key,value in form_data.items() %}
+    <div id=display_key_value>
+        <p class="key"> {{key}}</p>
+        <p class=value> {{value}}</p>
+    </div>
+    {% endfor %}
+</body>
+
+</html>
