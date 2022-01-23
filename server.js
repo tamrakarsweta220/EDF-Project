@@ -6,10 +6,10 @@ const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // The database to use
-const dbName = "winterCycleDB";
+const dbName = "ADD DATABASE NAME HERE";
 
 //connect mongodb using Atlas connection string, it will lead to the database specified above
-const url = "mongodb+srv://edf-winter-cycle:enforcementWinter@cluster0.cepjc.mongodb.net/" + dbName;
+const url = "ADD CONNECTION STRING HERE" + dbName;
 mongoose.connect(url, { useNewUrlParser: true }, { useUnifiedTopology: true });
 console.log("Connected correctly to server");
 
